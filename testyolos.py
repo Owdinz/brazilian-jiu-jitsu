@@ -7,7 +7,7 @@ from ultralytics import YOLO #yolo algo, used for the image
 # Load a pretrained model
 model = YOLO("yolo26s-pose.pt")#change the letter after "11" to "n" for nano and weak device, "m" for medium and "l" for large and "x" for extra large and "s" for small, depending on your device's capabilities
 # Run detection on an image
-results = model("test2pos.jpg")
+results = model("test2pos.jpg") #image/video or whatever u want to detect
 
 annotated_bgr = results[0].plot()  #Get the annotated image in BGR format
 rgb_image = cv2.cvtColor(annotated_bgr, cv2.COLOR_BGR2RGB)  # Convert BGR to RGB
