@@ -1,2 +1,2 @@
-# brazilian-jiu-jitsu
-Thesis
+# Py projs
+
